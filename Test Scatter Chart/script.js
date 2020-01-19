@@ -140,7 +140,7 @@ data = d3.json('https://raw.githubusercontent.com/spjoshi/d3hekma/master/D3/city
         })
         .attr("cx", function (d) {
           if (d.product == "Product 2") {
-            return xScale(d.coverage + 5)
+            return xScale(d.coverage + 0)
           } else {
             return xScale(d.coverage)
           }
@@ -162,7 +162,6 @@ data = d3.json('https://raw.githubusercontent.com/spjoshi/d3hekma/master/D3/city
       tooltip.html("Country: " + d.location + "<br/>" + " Annual Enrollment Potential: " + d.range + "<br/>" + "# of Patients: " + d.population)
         .style("left", d3.event.pageX + "px")
         .style("top", (d3.event.pageY - 38) + "px")
-
     })
 
     .on("mouseout", function (d) {
