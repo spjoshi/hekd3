@@ -81,7 +81,11 @@ data = d3.json('https://raw.githubusercontent.com/spjoshi/d3hekma/master/D3/city
     .append("circle")
     //   console.log(d.coverage)
     .attr("cx", function (d) {
-      return xScale(0);
+      if (d.product == "Product 2") {
+        return xScale(d.coverage + 0)
+      } else {
+        return xScale(d.coverage)
+      }
     })
     .attr("cy", function (d) {
       return yScale(0);
@@ -92,7 +96,7 @@ data = d3.json('https://raw.githubusercontent.com/spjoshi/d3hekma/master/D3/city
     .attr("fill", "#fff")
     .attr("opacity", 0)
     .attr("stroke", "skyblue")
-    .attr("stroke-width", 122);
+    .attr("stroke-width", 2);
   vn.transition()
     .duration(function (d, i) {
       return i * 10
