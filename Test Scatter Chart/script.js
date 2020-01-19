@@ -103,7 +103,7 @@ data = d3.json('https://raw.githubusercontent.com/spjoshi/d3hekma/master/D3/city
   // .style("fill", "none");
 
   var t = d3.transition()
-    .duration(3000)
+    .duration(1000)
     .ease(d3.easeLinear);
 
   d3.selectAll("circle")
