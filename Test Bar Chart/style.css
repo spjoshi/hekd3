@@ -1,0 +1,26 @@
+
+* {
+    font-family: sans-serif;
+    font-size: 14px;
+}
+.axis path,
+.axis line {
+    fill: none;
+    stroke: black;
+    shape-rendering: crispEdges;
+}
+
+.axis text {
+    font-family: sans-serif;
+    font-size: 14px;
+}
+svg {
+    background-color: rgb(199, 199, 218);
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+barLabel {
+    font-size: 14px;
+}

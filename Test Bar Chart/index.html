@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css" <link rel="stylesheet"
+		href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<title>Clinical Trial Observations</title>
+	<script src="http://d3js.org/d3.v3.min.js"></script>
+
+</head>
+
+<body>
+	<div id="main" class="container-fluid"></div>
+
+	<script type="text/javascript">
+		function mainfunc() {
+			// -------------------------------------------------------------------------
+
+			// Width and height ----------------------------------------------
+			var padding = 35;
+			var margin = {
+				top: 20,
+				right: 10,
+				bottom: 100,
+				left: 40
+			};
+			var h = window.innerHeight - margin.top - margin.bottom;
+			var w = window.innerWidth - margin.left - margin.right;
+			var barPadding = 0.05;
+
+
+			var dataset = [8, 5, 1, 3, 1, 3, 4, 2, 6];
+
+			var dataset2 = [{
+					"A": 8
+				},
+				{
+					"B": 5
+				},
+				{
+					"C": 1
+				},
+				{
+					"D": 3
+				},
+				{
+					"E": 1
+				},
+				{
+					"F": 3
+				},
+				{
+					"G": 4
+				},
+				{
+					"H": 2
+				},
+				{
+					"I": 6
+				}
+			]
+
+			var xScale = d3.scale.ordinal()
+				.domain(d3.range(dataset2.length))
+				.rangeRoundBands([margin.right, w - margin.left - margin.right - padding - 1], barPadding);
+
+			var yScale = d3.scale.linear()
+				.domain([0, d3.max(dataset) + 1.0])
+				.range([h - margin.top, margin.top * 2]);
+
+			var yAxis = d3.svg.axis()
+				.scale(yScale)
+				.orient("left")
+				.ticks(12);
+
+			var xAxis = d3.svg.axis()
+				.scale(xScale)
+				.orient("bottom")
+				.ticks(9)
+				.tickFormat(function (d) {
+					return
+				});
+
+			// Create SVG element ----------------------------------------------
+			var svg = d3.select("#main")
+				.append("svg")
+				.attr("width", w)
+				.attr("height", h);
+
+
+			var group = svg.append("g")
+				.attr("transform", "translate(" + margin.left + ',' + -margin.top + ")");
+
+			// Create SVG for the text ------------------------------------------
+			var svg_text = d3.select("body")
+				.append("svg")
+				.attr("width", w)
+				.attr("height", h);
+
+			// Create bars ----------------------------------------------
+			group.selectAll("rect")
+				.data(dataset)
+				.enter()
+				.append("rect")
+				.attr("x", function (d, i) {
+					return padding + 1 + (i * ((w - margin.left - margin.right - padding) / dataset.length))
+				}) // 1 for spacing between the y-axis and bars
+				.attr("y", function (d, i) {
+					return yScale(d);
+				})
+				.attr("width", xScale.rangeBand())
+				.attr("height", function (d) {
+					return h - margin.top - yScale(d);
+				})
+				.attr("fill", "navy");
+
+			// Create labels ----------------------------------------------
+			group.selectAll("text")
+				.data(dataset)
+				.enter()
+				.append("text")
+				.text(function (d) {
+					return d;
+				})
+				.attr("text-anchor", "middle")
+				.attr("class", "barLabel")
+				.attr("x", function (d, i) {
+					return xScale(i) + margin.left + margin.right + padding;
+				})
+				.attr("y", function (d, i) {
+					return yScale(d) - 5;
+				})
+				.attr("font-family", "sans-serif")
+				.attr("font-size", "11px")
+				.attr("fill", "navy");
+
+			group.append("g")
+				.attr("class", "axis")
+				.attr("transform", "translate( " + (padding - 10) + "," + (h - margin.top + 2) + ")")
+				.call(xAxis);
+
+			group.append("g")
+				.attr("class", "axis")
+				.attr("transform", "translate(" + (padding) + ", 0)")
+				.call(yAxis);
+
+			svg.append("g")
+				.attr("class", "y axis")
+				.append("text")
+				.attr("transform", "rotate(-90)")
+				.attr("y", 6)
+				.attr("x", -(h - margin.top - margin.bottom) / 2)
+				.attr("dy", "2em")
+				.style("text-anchor", "end")
+				.text("Number of Subjects");
+
+			svg.append("g").append("text")
+				.attr("text-anchor",
+					"middle") // this makes it easy to centre the text as the transform is applied to the anchor
+				.attr("transform", "translate(" + (w / 2) + "," + (h - (padding / 3) + 8) + ")") // centre below axis
+				.text("Change in Test score");
+
+		} // end mainfunc
+		mainfunc()
+		// -------------------------------------------------------------------------
+	</script>
+</body>
+
+</html>
