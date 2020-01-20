@@ -13,7 +13,7 @@ var svg = d3.select("#my_dataviz")
             "translate(" + margin.left + "," + margin.top + ")");
 
 //Read the data
-d3.csv("https://raw.githubusercontent.com/spjoshi/hekd3/master/PDandAR.json?token=AD2LS57UZYCUZER22JWD7YC6EYPSI").then(function (data) {
+d3.csv("https://raw.githubusercontent.com/spjoshi/hekd3/master/LineChart%201/protocol_deviation_rate.csv?token=AD2LS55DFSYE3NPADYAKFOS6EYSK6").then(function (data) {
 
             // List of groups (here I have one group per column)
             var allGroup = ["BI201-301", "BIO-423"]
@@ -59,12 +59,11 @@ d3.csv("https://raw.githubusercontent.com/spjoshi/hekd3/master/PDandAR.json?toke
                   .append("path")
                   .datum(data)
                   .attr("d", d3.line()
-                        .x(function (d, i) {
-
-                              return x(i)
+                        .x(function (d) {
+                              return x(+d.Week)
                         })
                         .y(function (d) {
-                              return y(+d.valueA)
+                              return y(+d.BIO201-301)
                         })
                   )
                   .attr("stroke", function (d) {
@@ -91,7 +90,7 @@ d3.csv("https://raw.githubusercontent.com/spjoshi/hekd3/master/PDandAR.json?toke
                         .duration(1000)
                         .attr("d", d3.line()
                               .x(function (d) {
-                                    return x(+d.time)
+                                    return x(+d.Week)
                               })
                               .y(function (d) {
                                     return y(+d.value)
