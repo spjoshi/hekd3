@@ -1,7 +1,7 @@
 // set the dimensions and margins of the graph
 var margin = {top : 10, right: 100, bottom: 30, left: 30},
-            width = 460 - margin.left - margin.right,
-            height = 400 - margin.top - margin.bottom;
+            width = window.innerWidth/3 - margin.left - margin.right,
+            height = window.innerHeight/2 - margin.top - margin.bottom;
 
 // append the svg object to the body of the page
 var svg = d3.select("#my_dataviz")
@@ -11,12 +11,17 @@ var svg = d3.select("#my_dataviz")
       .append("g")
       .attr("transform",
             "translate(" + margin.left + "," + margin.top + ")");
-
+var url = "https://raw.githubusercontent.com/spjoshi/hekd3/master/LineChart%201/protocol_deviation_rate2.csv"
 //Read the data
-d3.csv("https://raw.githubusercontent.com/spjoshi/hekd3/master/LineChart%201/protocol_deviation_rate.csv?token=AD2LS55DFSYE3NPADYAKFOS6EYSK6").then(function (data) {
-
+d3.csv(url).then(function (data) {
+      data.forEach(function (d) {
+                        d.Week = +d.Week;
+                        d["BI201301"] = +d["BI201301"];
+                        d["BIO423"] = +d["BIO423"];
+                        d["BI122"] = +d["BI122"];
+      })
             // List of groups (here I have one group per column)
-            var allGroup = ["BI201-301", "BIO-423"]
+            var allGroup = ["BI201301", "BIO423", "BI122"]
             console.log(data)
             // add the options to the button
             d3.select("#selectStudyButton")
@@ -60,14 +65,18 @@ d3.csv("https://raw.githubusercontent.com/spjoshi/hekd3/master/LineChart%201/pro
                   .datum(data)
                   .attr("d", d3.line()
                         .x(function (d) {
-                              return x(+d.Week)
+                              // console.log(d)
+                              // console.log(x(d.Week))
+                              return x(d.Week)
+                              
                         })
                         .y(function (d) {
-                              return y(+d.BIO201-301)
+                              // console.log(y(d.BI201301))
+                              return y(d.BI201301)
                         })
                   )
                   .attr("stroke", function (d) {
-                        return myColor("valueA")
+                        return myColor("BI201301")
                   })
                   .style("stroke-width", 4)
                   .style("fill", "none")
@@ -78,7 +87,7 @@ d3.csv("https://raw.githubusercontent.com/spjoshi/hekd3/master/LineChart%201/pro
                   // Create new data with the selection?
                   var dataFilter = data.map(function (d) {
                         return {
-                              time: d.time,
+                              Week: d.Week,
                               value: d[selectedGroup]
                         }
                   })
@@ -90,10 +99,13 @@ d3.csv("https://raw.githubusercontent.com/spjoshi/hekd3/master/LineChart%201/pro
                         .duration(1000)
                         .attr("d", d3.line()
                               .x(function (d) {
-                                    return x(+d.Week)
+                                    console.log(d.Week)
+                                    return x(d.Week)
+
                               })
                               .y(function (d) {
-                                    return y(+d.value)
+                                    console.log(d.value)
+                                    return y(d.value)
                               })
                         )
                         .attr("stroke", function (d) {
@@ -102,7 +114,7 @@ d3.csv("https://raw.githubusercontent.com/spjoshi/hekd3/master/LineChart%201/pro
             }
 
             // When the button is changed, run the updateChart function
-            d3.select("#selectButton").on("change", function (d) {
+            d3.select("#selectStudyButton").on("change", function (d) {
                   // recover the option that has been chosen
                   var selectedOption = d3.select(this).property("value")
                   // run the updateChart function with this selected option
