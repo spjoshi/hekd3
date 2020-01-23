@@ -92,10 +92,10 @@ data = d3.json('https://raw.githubusercontent.com/spjoshi/d3hekma/master/D3/city
     .attr("fill", "#fff")
     .attr("opacity", 0)
     .attr("stroke", "skyblue")
-    .attr("stroke-width", 122);
+    .attr("stroke-width", 12);
   vn.transition()
     .duration(function (d, i) {
-      return i * 10
+      return i * 2
     })
     .attr("r", function (d) {
       return (4 + (d.population * .4));
@@ -103,10 +103,10 @@ data = d3.json('https://raw.githubusercontent.com/spjoshi/d3hekma/master/D3/city
   // .style("fill", "none");
 
   var t = d3.transition()
-    .duration(3000)
+    .duration(1000)
     .ease(d3.easeLinear);
 
-  d3.selectAll("circle")
+  svg.selectAll("circle")
     .transition(t)
     .delay(1000) // First fade to green.
     .style("fill", function (d) {
@@ -140,7 +140,7 @@ data = d3.json('https://raw.githubusercontent.com/spjoshi/d3hekma/master/D3/city
         })
         .attr("cx", function (d) {
           if (d.product == "Product 2") {
-            return xScale(d.coverage + 5)
+            return xScale(d.coverage)
           } else {
             return xScale(d.coverage)
           }
