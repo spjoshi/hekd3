@@ -1,12 +1,12 @@
-Stage,	BIO423,	BI201301,	BI122
-Pre-Screened,	2500,	1500,	3750
-No Consent,	50,	30,	75
-Consented,	2450,	1470,	3675
-Failed Screen,	400,	240,	600
-Withdrawn,	200,	300,	500
-Enrolled,	1290,	774,	1935
-Failed Randomization,	10,	6,	15
-Randomized,	200,	120,	300
-Completed,	20,	12,	30
-Not Evaluable,	10,	6,	15
-Evaluable,	20,	12,	30
+Stage,BIO423,BI201301,BI122
+Pre-Screened,2500,1500,3750
+No Consent,50,30,75
+Consented,2450,1470,3675
+Failed Screen,400,240,600
+Withdrawn,200,300,500
+Enrolled,1290,774,1935
+Failed Randomization,10,6,15
+Randomized,200,120,300
+Completed,20,12,30
+Not Evaluable,10,6,15
+Evaluable,20,12,30
