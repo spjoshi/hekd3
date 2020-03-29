@@ -1,0 +1,16 @@
+Study,Site,Screen_Failure_Rate,PD_Rate,AE_Rate,Enrollment_Rate,Withdrawal_Rate
+BI201301,UCSF Medical Center,0.2,0.7,0.6,0.7,0.6
+BI201301,Kaiser Hospital,0.6,0.3,0.6,0.3,0.9
+BI201301,Sutter Health,0.6,0.3,0.6,0.3,0.9
+BI201301,Cleaveland Clinic,0.6,0.6,0.4,0.6,0.4
+BI201301,John Hopkins,0.4,0.6,0.4,0.9,0.4
+BIO423,UCSF Medical Center,0.4,0.4,0.6,0.9,0.6
+BIO423,Kaiser Hospital,0.4,0.6,0.6,0.4,0.4
+BIO423,Sutter Health,0.4,0.6,0.6,0.4,0.4
+BIO423,Cleaveland Clinic,0.6,0.6,0.4,0.6,0.4
+BIO423,John Hopkins,0.9,0.4,0.4,0.9,0.7
+BI122,UCSF Medical Center,0.9,0.4,0.4,0.9,0.3
+BI122,Kaiser Hospital,0.9,0.4,0.4,0.4,0.3
+BI122,Sutter Health,0.3,0.9,0.6,0.4,0.6
+BI122,Cleaveland Clinic,0.3,0.4,0.9,0.6,0.6
+BI122,John Hopkins,0.3,0.6,0.4,0.9,0.7
