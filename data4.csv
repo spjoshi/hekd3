@@ -1,4 +1,4 @@
-Study,Site,Screen_Failure_Rate,PD_Rate,AE_Rate,Enrollment_Rate,Withdrawal_Rate
+Study,Site,Screen Failure Rate,Protocol Deviation Rate,Adverse Event Rate,Enrollment Rate,Withdrawal Rate
 BI201301,UCSF Medical Center,0.2,0.7,0.6,0.7,0.6
 BI201301,Kaiser Hospital,0.6,0.3,0.6,0.3,0.9
 BI201301,Sutter Health,0.6,0.3,0.6,0.3,0.9
