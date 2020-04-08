@@ -96,11 +96,7 @@ data = d3.json('https://raw.githubusercontent.com/spjoshi/d3hekma/master/D3/city
     .attr("fill", "#fff")
     .attr("opacity", 0)
     .attr("stroke", "skyblue")
-<<<<<<< HEAD
     .attr("stroke-width", 12);
-=======
-    .attr("stroke-width", 2);
->>>>>>> 8eb6cf2f62a50aa2692009da26443ed63001e04a
   vn.transition()
     .duration(function (d, i) {
       return i * 2
@@ -138,50 +134,47 @@ data = d3.json('https://raw.githubusercontent.com/spjoshi/d3hekma/master/D3/city
   svg.selectAll("circle")
     .transition(t)
     .on("start", function repeat() {
-      d3.active(this)
-        .attr("r", function (d) {
-          if (d.population > populationThreshold) {
-            return 0
-          } else {
-            return (4 + (d.population * .1))
-          }
-        })
-        .attr("cx", function (d) {
-          if (d.product == "Product 2") {
-<<<<<<< HEAD
-            return xScale(d.coverage)
-=======
-            return xScale(d.coverage + 0)
->>>>>>> 8eb6cf2f62a50aa2692009da26443ed63001e04a
-          } else {
-            return xScale(d.coverage)
-          }
-        })
-        .transition(t)
-        .attr("cx", function (d) {
-          return xScale(d.coverage);
-        })
-        .attr("r", function (d) {
-          return (4 + (d.population * .1));
-        })
-        .transition(t)
-        .on("start", repeat);
+        d3.active(this)
+          .attr("r", function (d) {
+            if (d.population > populationThreshold) {
+              return 0
+            } else {
+              return (4 + (d.population * .1))
+            }
+          })
+          .attr("cx", function (d) {
+            if (d.product == "Product 2") {
+              return xScale(d.coverage + 0)
+            } else {
+              return xScale(d.coverage)
+            }
+          })
+          .transition(t)
+          .attr("cx", function (d) {
+            return xScale(d.coverage);
+          })
+          .attr("r", function (d) {
+            return (4 + (d.population * .1));
+          })
+          .transition(t)
+          .on("start", repeat)
+      };
     });
 
-  svg.selectAll("circle").on("mouseover", function (d, i) {
+svg.selectAll("circle").on("mouseover", function (d, i) {
 
-      tooltip.style("opacity", 1);
-      tooltip.html("Country: " + d.location + "<br/>" + " Annual Enrollment Potential: " + d.range + "<br/>" + "# of Patients: " + d.population)
-        .style("left", d3.event.pageX + "px")
-        .style("top", (d3.event.pageY - 38) + "px")
-    })
+  tooltip.style("opacity", 1);
+  tooltip.html("Country: " + d.location + "<br/>" + " Annual Enrollment Potential: " + d.range + "<br/>" + "# of Patients: " + d.population)
+    .style("left", d3.event.pageX + "px")
+    .style("top", (d3.event.pageY - 38) + "px")
+})
 
-    .on("mouseout", function (d) {
-      tooltip.style("opacity", 0);
-    })
+.on("mouseout", function (d) {
+  tooltip.style("opacity", 0);
+})
 
-  var tooltip = d3.select('body')
-    .append('div')
-    .attr("class", "tooltip")
-    .style("opacity", 0);
+var tooltip = d3.select('body')
+  .append('div')
+  .attr("class", "tooltip")
+  .style("opacity", 0);
 }) // end of city enrollment data

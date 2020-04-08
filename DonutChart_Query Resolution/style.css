@@ -1,0 +1,29 @@
+svg {
+    -webkit-filter: drop-shadow(0 px 3 px 3 px rgba(0, 0, 0, .3));
+    filter: drop-shadow(0 px 3 px 3 px rgba(0, 0, 0, .25));
+}
+
+/*Styling for the lines connecting the labels to the slices*/
+polyline {
+    opacity: .3;
+    stroke: black;
+    stroke-width: 2 px;
+    fill: none;
+}
+
+/* Make the percentage on the text labels bold*/
+.labelName tspan {
+    font-style: normal;
+    font-weight: 700;
+}
+
+/* In biology we generally italicise species names. */
+.labelName {
+    font-size: 0.9 em;
+    font-style: italic;
+}
+
+* {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+}

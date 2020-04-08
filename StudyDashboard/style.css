@@ -1,0 +1,114 @@
+*,
+.axis {
+    font: 16px sans-serif;
+    stroke-width: 2px;
+}
+
+.legend {
+    font: 12px sans-serif;
+}
+
+.targetline {
+    fill: none;
+    stroke: rgb(3, 156, 23);
+    stroke-width: 2px;
+}
+
+.plannedline {
+    fill: none;
+    stroke: rgb(241, 217, 0);
+    stroke-width: 2px;
+}
+
+.actualline {
+    fill: none;
+    stroke: steelblue;
+    stroke-width: 2px;
+}
+
+.forecastline {
+    fill: none;
+    stroke: rgb(245, 1, 1);
+    stroke-width: 2px;
+}
+
+.gaugeBackground {
+    fill: #ddd;
+}
+
+
+#title_text {
+    font-size: 22px;
+    text-align: center;
+    padding-left: 200px;
+}
+
+#study_description_text,
+#phase_text,
+#condition_text {
+    font-size: 20px;
+    text-align: center;
+    padding-left: 200px;
+    font-family: "Raleway", sans-serif;
+}
+
+
+#pre_study_gauge {
+    margin-left: 200px;
+    width: 30%;
+    float: left;
+    border: steelblue;
+    line-height: .5;
+}
+
+#bar_div,
+#QR_DonutViz,
+#ae_div,
+#pd_div,
+#pre_study_gauge,
+#enrollment_timeline_div,
+#contract_details {
+    float: left;
+    padding: 5px 50px 0px 50px;
+    /* border: 1px rgba(155, 155, 155, 0.534) solid */
+}
+
+#QR_DonutViz {
+    margin-left: 0px;
+}
+
+#enrollment_timeline_div {
+    margin-left: 100px;
+}
+
+#study_site_performance_div {
+    /* padding-top: 150px; */
+}
+
+.tooltip {
+    position: absolute;
+    text-align: center;
+    width: auto;
+    height: auto;
+    padding: 2px;
+    font: 12px sans-serif;
+    color: white;
+    background: rgb(55, 113, 189);
+    border: 0px;
+    border-radius: 8px;
+    pointer-events: none;
+    z-index: 7;
+    cursor: pointer;
+}
+
+.axis-grid line {
+    stroke: #1e049271;
+    opacity: 0.5;
+}
+
+.axis {
+    font: 14px sans-serif;
+    stroke-width: 3px;
+    opacity: 0.9;
+    /* color: #fff; */
+}

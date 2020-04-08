@@ -1,0 +1,280 @@
+var site_performance_data2 = [{
+        BI201301: [{
+                "ID": 91817,
+                "Name": "UCSF Medical Center",
+                "Screen Failure Rate": 0.3,
+                "Enrollment Rate": 0.7,
+                "Withdrawal Rate": 0.21,
+                "Query Resolution": "Open",
+                "Protocol Deviation Rate": 0.3,
+                "Adverse Event Rate": 0.23
+            },
+            {
+                "ID": 91818,
+                "Name": "Kaiser Hospital",
+                "Screen Failure Rate": 0.2,
+                "Enrollment Rate": 0.8,
+                "Withdrawal Rate": 0.24,
+                "Query Resolution": "Close",
+                "Protocol Deviation Rate": 0.2,
+                "Adverse Event Rate": 0.13
+            },
+            {
+                "ID": 91819,
+                "Name": "Sutter Healt",
+                "Screen Failure Rate": 0.2,
+                "Enrollment Rate": 0.8,
+                "Withdrawal Rate": 0.24,
+                "Query Resolution": "Answered",
+                "Protocol Deviation Rate": 0.2,
+                "Adverse Event Rate": 0.13
+            },
+            {
+                "ID": 91820,
+                "Name": "Cleveland Clinic",
+                "Screen Failure Rate": 0.3,
+                "Enrollment Rate": 0.7,
+                "Withdrawal Rate": 0.21,
+                "Query Resolution": "Cancelled",
+                "Protocol Deviation Rate": 0.3,
+                "Adverse Event Rate": 0.23
+            },
+            {
+                "ID": 91821,
+                "Name": "Cedars-Sinai Medical Center",
+                "Screen Failure Rate": 0.4,
+                "Enrollment Rate": 0.6,
+                "Withdrawal Rate": 0.18,
+                "Query Resolution": "Open",
+                "Protocol Deviation Rate": 0.4,
+                "Adverse Event Rate": 0.33
+            },
+            {
+                "ID": 91822,
+                "Name": "Mayo Clinic",
+                "Screen Failure Rate": 0.21,
+                "Enrollment Rate": 0.79,
+                "Withdrawal Rate": 0.237,
+                "Query Resolution": "Close",
+                "Protocol Deviation Rate": 0.21,
+                "Adverse Event Rate": 0.14
+            },
+            {
+                "ID": 91823,
+                "Name": "Johns Hopkins",
+                "Screen Failure Rate": 0.11,
+                "Enrollment Rate": 0.89,
+                "Withdrawal Rate": 0.267,
+                "Query Resolution": "Answered",
+                "Protocol Deviation Rate": 0.11,
+                "Adverse Event Rate": 0.04
+            },
+            {
+                "ID": 91824,
+                "Name": "Massachusetts General Hospital",
+                "Screen Failure Rate": 0.4,
+                "Enrollment Rate": 0.6,
+                "Withdrawal Rate": 0.18,
+                "Query Resolution": "Cancelled",
+                "Protocol Deviation Rate": 0.4,
+                "Adverse Event Rate": 0.33
+            },
+            {
+                "ID": 91825,
+                "Name": "Mount Sinai Hospital",
+                "Screen Failure Rate": 0.21,
+                "Enrollment Rate": 0.79,
+                "Withdrawal Rate": 0.237,
+                "Query Resolution": "Open",
+                "Protocol Deviation Rate": 0.21,
+                "Adverse Event Rate": 0.14
+            }
+        ]
+    },
+    {
+        BIO423: [{
+                "ID": 91817,
+                "Name": "UCSF Medical Center",
+                "Screen Failure Rate": 0.3,
+                "Enrollment Rate": 0.7,
+                "Withdrawal Rate": 0.21,
+                "Query Resolution": "Open",
+                "Protocol Deviation Rate": 0.3,
+                "Adverse Event Rate": 0.23
+            },
+            {
+                "ID": 91818,
+                "Name": "Kaiser Hospital",
+                "Screen Failure Rate": 0.2,
+                "Enrollment Rate": 0.8,
+                "Withdrawal Rate": 0.24,
+                "Query Resolution": "Close",
+                "Protocol Deviation Rate": 0.2,
+                "Adverse Event Rate": 0.13
+            },
+            {
+                "ID": 91819,
+                "Name": "Sutter Healt",
+                "Screen Failure Rate": 0.2,
+                "Enrollment Rate": 0.8,
+                "Withdrawal Rate": 0.24,
+                "Query Resolution": "Answered",
+                "Protocol Deviation Rate": 0.2,
+                "Adverse Event Rate": 0.13
+            },
+            {
+                "ID": 91820,
+                "Name": "Cleveland Clinic",
+                "Screen Failure Rate": 0.3,
+                "Enrollment Rate": 0.7,
+                "Withdrawal Rate": 0.21,
+                "Query Resolution": "Cancelled",
+                "Protocol Deviation Rate": 0.3,
+                "Adverse Event Rate": 0.23
+            },
+            {
+                "ID": 91821,
+                "Name": "Cedars-Sinai Medical Center",
+                "Screen Failure Rate": 0.4,
+                "Enrollment Rate": 0.6,
+                "Withdrawal Rate": 0.18,
+                "Query Resolution": "Open",
+                "Protocol Deviation Rate": 0.4,
+                "Adverse Event Rate": 0.33
+            },
+            {
+                "ID": 91822,
+                "Name": "Mayo Clinic",
+                "Screen Failure Rate": 0.21,
+                "Enrollment Rate": 0.79,
+                "Withdrawal Rate": 0.237,
+                "Query Resolution": "Close",
+                "Protocol Deviation Rate": 0.21,
+                "Adverse Event Rate": 0.14
+            },
+            {
+                "ID": 91823,
+                "Name": "Johns Hopkins",
+                "Screen Failure Rate": 0.11,
+                "Enrollment Rate": 0.89,
+                "Withdrawal Rate": 0.267,
+                "Query Resolution": "Answered",
+                "Protocol Deviation Rate": 0.11,
+                "Adverse Event Rate": 0.04
+            },
+            {
+                "ID": 91824,
+                "Name": "Massachusetts General Hospital",
+                "Screen Failure Rate": 0.4,
+                "Enrollment Rate": 0.6,
+                "Withdrawal Rate": 0.18,
+                "Query Resolution": "Cancelled",
+                "Protocol Deviation Rate": 0.4,
+                "Adverse Event Rate": 0.33
+            },
+            {
+                "ID": 91825,
+                "Name": "Mount Sinai Hospital",
+                "Screen Failure Rate": 0.21,
+                "Enrollment Rate": 0.79,
+                "Withdrawal Rate": 0.237,
+                "Query Resolution": "Open",
+                "Protocol Deviation Rate": 0.21,
+                "Adverse Event Rate": 0.14
+            }
+        ]
+    },
+    {
+        BI122: [{
+                "ID": 91817,
+                "Name": "UCSF Medical Center",
+                "Screen Failure Rate": 0.3,
+                "Enrollment Rate": 0.7,
+                "Withdrawal Rate": 0.21,
+                "Query Resolution": "Open",
+                "Protocol Deviation Rate": 0.3,
+                "Adverse Event Rate": 0.23
+            },
+            {
+                "ID": 91818,
+                "Name": "Kaiser Hospital",
+                "Screen Failure Rate": 0.2,
+                "Enrollment Rate": 0.8,
+                "Withdrawal Rate": 0.24,
+                "Query Resolution": "Close",
+                "Protocol Deviation Rate": 0.2,
+                "Adverse Event Rate": 0.13
+            },
+            {
+                "ID": 91819,
+                "Name": "Sutter Healt",
+                "Screen Failure Rate": 0.2,
+                "Enrollment Rate": 0.8,
+                "Withdrawal Rate": 0.24,
+                "Query Resolution": "Answered",
+                "Protocol Deviation Rate": 0.2,
+                "Adverse Event Rate": 0.13
+            },
+            {
+                "ID": 91820,
+                "Name": "Cleveland Clinic",
+                "Screen Failure Rate": 0.3,
+                "Enrollment Rate": 0.7,
+                "Withdrawal Rate": 0.21,
+                "Query Resolution": "Cancelled",
+                "Protocol Deviation Rate": 0.3,
+                "Adverse Event Rate": 0.23
+            },
+            {
+                "ID": 91821,
+                "Name": "Cedars-Sinai Medical Center",
+                "Screen Failure Rate": 0.4,
+                "Enrollment Rate": 0.6,
+                "Withdrawal Rate": 0.18,
+                "Query Resolution": "Open",
+                "Protocol Deviation Rate": 0.4,
+                "Adverse Event Rate": 0.33
+            },
+            {
+                "ID": 91822,
+                "Name": "Mayo Clinic",
+                "Screen Failure Rate": 0.21,
+                "Enrollment Rate": 0.79,
+                "Withdrawal Rate": 0.237,
+                "Query Resolution": "Close",
+                "Protocol Deviation Rate": 0.21,
+                "Adverse Event Rate": 0.14
+            },
+            {
+                "ID": 91823,
+                "Name": "Johns Hopkins",
+                "Screen Failure Rate": 0.11,
+                "Enrollment Rate": 0.89,
+                "Withdrawal Rate": 0.267,
+                "Query Resolution": "Answered",
+                "Protocol Deviation Rate": 0.11,
+                "Adverse Event Rate": 0.04
+            },
+            {
+                "ID": 91824,
+                "Name": "Massachusetts General Hospital",
+                "Screen Failure Rate": 0.4,
+                "Enrollment Rate": 0.6,
+                "Withdrawal Rate": 0.18,
+                "Query Resolution": "Cancelled",
+                "Protocol Deviation Rate": 0.4,
+                "Adverse Event Rate": 0.33
+            },
+            {
+                "ID": 91825,
+                "Name": "Mount Sinai Hospital",
+                "Screen Failure Rate": 0.21,
+                "Enrollment Rate": 0.79,
+                "Withdrawal Rate": 0.237,
+                "Query Resolution": "Open",
+                "Protocol Deviation Rate": 0.21,
+                "Adverse Event Rate": 0.14
+            }
+        ]
+    }
+]

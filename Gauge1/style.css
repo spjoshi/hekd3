@@ -1,0 +1,30 @@
+.gaugeBackground {
+    fill: #ddd;
+}
+
+* {
+    font-family: "Raleway", sans-serif
+}
+
+#title_text {
+    font-size: 22px;
+    text-align: center;
+    padding-left: 200px;
+}
+
+#study_description_text,
+#phase_text,
+#condition_text {
+    font-size: 12px;
+    text-align: center;
+    padding-left: 200px;
+}
+
+
+#pre_study_gauge {
+    margin-left: 900px;
+    width: 30%;
+    float: left;
+    border: steelblue;
+    line-height: .5;
+}

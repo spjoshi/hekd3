@@ -1,0 +1,32 @@
+* {
+    font: 14px sans-serif;
+    stroke-width: 2px;
+}
+
+.bar--positive {
+    fill: steelblue;
+}
+
+.bar--negative {
+    fill: brown;
+}
+
+.axis text {
+    font: 14px sans-serif;
+}
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+}
+
+rect:hover {
+    fill: rgba(255, 166, 0, 0.548);
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    border-color: rgba(255, 0, 200, 0.986);
+    border-style: solid;
+    border-width: 50px;
+}

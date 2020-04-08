@@ -1,0 +1,32 @@
+* {
+    font: 14px sans-serif;
+    stroke-width: 2px;
+}
+
+.legend {
+    font: 12px sans-serif;
+}
+
+.targetline {
+    fill: none;
+    stroke: rgb(3, 156, 23);
+    stroke-width: 2px;
+}
+
+.plannedline {
+    fill: none;
+    stroke: rgb(241, 217, 0);
+    stroke-width: 2px;
+}
+
+.actualline {
+    fill: none;
+    stroke: steelblue;
+    stroke-width: 2px;
+}
+
+.forecastline {
+    fill: none;
+    stroke: rgb(245, 1, 1);
+    stroke-width: 2px;
+}

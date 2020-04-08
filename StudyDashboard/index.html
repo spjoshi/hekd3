@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+
+<head>
+    <meta charset="utf-8">
+    <!-- Load d3.js -->
+    <script src="https://d3js.org/d3.v5.js"></script>
+    <script src="//d3js.org/d3-scale-chromatic.v0.3.min.js"></script>
+    <!-- <script src="BarScript.js"></script> -->
+</head>
+
+<body>
+    <h1>
+        <div id="title_text">BI201301</div>
+        <!-- <div id="title_text">Study BI201301</div> -->
+    </h1>
+    <div id="phase_text">Phase 1</div>
+    <div id="study_description_text">A Multicenter, Open-Label, Dose-Escalation Study to Evaluate the
+        Safety,
+        Tolerability, and Efficacy of BMN 110 in Subjects with Mucopolysaccharidosis IVA (Morquio Syndrome)</div>
+    <div id="condition_text">Mucopolysaccharidosis IVA (Morquio Syndrome)</div>
+    </br>
+    <!-- <hr> -->
+    <hr>
+
+    <h1 id="studyName"></h1>
+
+    <!-- Create a div where the graph will take place -->
+    <select id="selectStudyButton" style="float:left"></select>
+    <select id="selectPerformanceButton2" style="float:left; margin-bottom: 20px;"></select>
+    <div id="study_site_performance_div2" style="float:left"></div>
+    <div id="QR_DonutViz" style="float:left; margin-left: 70px"></div>
+    <div id="enrollment_timeline_div"></div>
+    <div id="pre_study_gauge" style="float:left"></div>
+    <div id="bar_div"></div>
+    <div id="pd_div" style="float:left; padding-bottom: -30px"></div>
+    <div id="ae_div" style="float:left; margin-left: -75px"></div>
+    <div id="contract_details" style="margin-left: 130px">
+        <img style="height:423px" src="contracts_details.png"></img>
+    </div>
+
+    <!--Load d3 Bar Chart Code-->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
