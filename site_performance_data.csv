@@ -1,0 +1,10 @@
+Site ID,Site,Screen Failure Rate,Enrollment Rate,Withdrawal Rate,Query Resolution,Protocol Deviation Rate,Adverse Event Rate
+91817,UCSF Medical Center,0.3,0.7,0.21,Open,0.3,0.23
+91818,Kaiser Hospital,0.2,0.8,0.24,Close,0.2,0.13
+91819,Sutter Healt,0.2,0.8,0.24,Answered,0.2,0.13
+91820,Cleveland Clinic,0.3,0.7,0.21,Cancelled,0.3,0.23
+91821,Cedars-Sinai Medical Center,0.4,0.6,0.18,Open,0.4,0.33
+91822,Mayo Clinic,0.21,0.79,0.237,Close,0.21,0.14
+91823,Johns Hopkins,0.11,0.89,0.267,Answered,0.11,0.04
+91824,Massachusetts General Hospital,0.4,0.6,0.18,Cancelled,0.4,0.33
+91825,Mount Sinai Hospital,0.21,0.79,0.237,Open,0.21,0.14

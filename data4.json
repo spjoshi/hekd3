@@ -1,0 +1,98 @@
+{
+    "BI201301": {
+        "Screen_Failure_Rate": {
+            "UCSF Medical Center": 0.2,
+            "Kaiser Hospital": 0.7,
+            "Sutter Health": 0.4,
+            "Cleaveland Clinic": 0.9
+        },
+        "PD_Rate": {
+            "UCSF Medical Center": 0.6,
+            "Kaiser Hospital": 0.3,
+            "Sutter Health": 0.4,
+            "Cleaveland Clinic": 0.9
+        },
+        "AE_Rate": {
+            "UCSF Medical Center": 0.6,
+            "Kaiser Hospital": 0.3,
+            "Sutter Health": 0.4,
+            "Cleaveland Clinic": 0.9
+        },
+        "Enrollment_Rate": {
+            "UCSF Medical Center": 0.6,
+            "Kaiser Hospital": 0.3,
+            "Sutter Health": 0.4,
+            "Cleaveland Clinic": 0.9
+        },
+        "Withdrawal_Rate": {
+            "UCSF Medical Center": 0.6,
+            "Kaiser Hospital": 0.3,
+            "Sutter Health": 0.4,
+            "Cleaveland Clinic": 0.9
+        }
+    },
+    "BIO423": {
+        "Screen_Failure_Rate": {
+            "UCSF Medical Center": 0.6,
+            "Kaiser Hospital": 0.3,
+            "Sutter Health": 0.4,
+            "Cleaveland Clinic": 0.9
+        },
+        "PD_Rate": {
+            "UCSF Medical Center": 0.6,
+            "Kaiser Hospital": 0.3,
+            "Sutter Health": 0.4,
+            "Cleaveland Clinic": 0.9
+        },
+        "AE_Rate": {
+            "UCSF Medical Center": 0.6,
+            "Kaiser Hospital": 0.3,
+            "Sutter Health": 0.4,
+            "Cleaveland Clinic": 0.9
+        },
+        "Enrollment_Rate": {
+            "UCSF Medical Center": 0.6,
+            "Kaiser Hospital": 0.3,
+            "Sutter Health": 0.4,
+            "Cleaveland Clinic": 0.9
+        },
+        "Withdrawal_Rate": {
+            "UCSF Medical Center": 0.6,
+            "Kaiser Hospital": 0.3,
+            "Sutter Health": 0.4,
+            "Cleaveland Clinic": 0.9
+        }
+    },
+    "BI122": {
+        "Screen_Failure_Rate": {
+            "UCSF Medical Center": 0.6,
+            "Kaiser Hospital": 0.3,
+            "Sutter Health": 0.4,
+            "Cleaveland Clinic": 0.9
+        },
+        "PD_Rate": {
+            "UCSF Medical Center": 0.6,
+            "Kaiser Hospital": 0.3,
+            "Sutter Health": 0.4,
+            "Cleaveland Clinic": 0.9
+        },
+        "AE_Rate": {
+            "UCSF Medical Center": 0.6,
+            "Kaiser Hospital": 0.3,
+            "Sutter Health": 0.4,
+            "Cleaveland Clinic": 0.9
+        },
+        "Enrollment_Rate": {
+            "UCSF Medical Center": 0.6,
+            "Kaiser Hospital": 0.3,
+            "Sutter Health": 0.4,
+            "Cleaveland Clinic": 0.9
+        },
+        "Withdrawal_Rate": {
+            "UCSF Medical Center": 0.6,
+            "Kaiser Hospital": 0.3,
+            "Sutter Health": 0.4,
+            "Cleaveland Clinic": 0.9
+        }
+    }
+}
