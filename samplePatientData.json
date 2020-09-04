@@ -4490,7 +4490,7 @@
   {
     "id": "3d3d15496c25",
     "gender": "female",
-    "race": "M",
+    "race": "Other",
     "birthdate": "3/14/1950",
     "address_city": "Kansas City",
     "state": "MO",
@@ -6817,9 +6817,9 @@
   },
   {
     "id": "3837b17f4d8f",
-    "gender": "['SMART']",
-    "race": "8/22/1946",
-    "birthdate": "male",
+    "gender": "male",
+    "race": "Other",
+    "birthdate": "8/22/1946",
     "address_city": "Kansas City",
     "state": "MO",
     "country": "USA",
