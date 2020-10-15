@@ -1,7 +1,14 @@
 [
   {
-    "OnStudy": 6,
-    "Pre-Screening": 2,
-    "Screening": 11
+    "stage": "On-Study",
+    "count": 6
+  },
+  {
+    "stage": "Pre-Screening",
+    "count": 2
+  },
+  {
+    "stage": "Screening",
+    "count": 11
   }
 ]
