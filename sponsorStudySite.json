@@ -2,30 +2,30 @@
   {
     "Site": "Bio",
     "On-Study": 3,
-    "Pre-Screening": "",
+    "Pre-Screening": 0,
     "Screening": 3
   },
   {
     "Site": "Bosch Hospital",
     "On-Study": 2,
-    "Pre-Screening": "",
+    "Pre-Screening": 0,
     "Screening": 2
   },
   {
     "Site": "JFK Medical Center",
-    "On-Study": "",
-    "Pre-Screening": "",
+    "On-Study": 0,
+    "Pre-Screening": 0,
     "Screening": 4
   },
   {
     "Site": "Sg3",
     "On-Study": 1,
     "Pre-Screening": 1,
-    "Screening": ""
+    "Screening": 0
   },
   {
     "Site": "St Johns Hospital Pvt Ltd",
-    "On-Study": "",
+    "On-Study": 0,
     "Pre-Screening": 2,
     "Screening": 1
   }
