@@ -12,24 +12,24 @@
     "On-Study": 2,
     "Pre-Screening": 0,
     "Screening": 2,
-    "AE": 2,
-    "PD": 1
+    "AE": 1,
+    "PD": 3
   },
   {
     "Site": "JFK Medical Center",
     "On-Study": 0,
     "Pre-Screening": 0,
     "Screening": 4,
-    "AE": 2,
-    "PD": 1
+    "AE": 3,
+    "PD": 6
   },
   {
     "Site": "Sg3",
     "On-Study": 1,
     "Pre-Screening": 1,
     "Screening": 0,
-    "AE": 2,
-    "PD": 1
+    "AE": 1,
+    "PD": 5
   },
   {
     "Site": "St Johns Hospital Pvt Ltd",
@@ -37,6 +37,6 @@
     "Pre-Screening": 2,
     "Screening": 1,
     "AE": 2,
-    "PD": 1
+    "PD": 3
   }
 ]
