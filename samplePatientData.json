@@ -12,7 +12,7 @@
     "postal_code": 2108,
     "maritalStatus": "M",
     "com_language": "English",
-    "mmse":"20"
+    "mmse":"15"
   },
   {
     "patient_id": "d519e25375bb",
@@ -27,7 +27,7 @@
     "postal_code": 1085,
     "maritalStatus": "S",
     "com_language": "English",
-    "mmse":"24"
+    "mmse":"15"
   },
   {
     "patient_id": "4b490096098b",
@@ -161,8 +161,7 @@
     "country": "US",
     "postal_code": 2108,
     "maritalStatus": "M",
-    "com_language": "Spanish",
-    "mmse":"20"
+    "com_language": "Spanish"
   },
   {
     "patient_id": "8653d901b943",
@@ -176,8 +175,7 @@
     "country": "US",
     "postal_code": 2108,
     "maritalStatus": "S",
-    "com_language": "Russian (Russia)",
-    "mmse":"20"
+    "com_language": "Russian (Russia)"
   },
   {
     "patient_id": "826f685338bd",
@@ -191,8 +189,7 @@
     "country": "FL",
     "postal_code": 2169,
     "maritalStatus": "S",
-    "com_language": "English",
-    "mmse":"22"
+    "com_language": "English"
   },
   {
     "patient_id": "e59f1ad6ff23",
